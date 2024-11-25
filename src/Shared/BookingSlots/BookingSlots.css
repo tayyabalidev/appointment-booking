@@ -1,0 +1,67 @@
+.booking-slots {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.days {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.day {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.day.selected {
+    background: #5469d4;
+    color: #fff;
+}
+
+.day span {
+    display: block;
+    font-size: 12px;
+}
+
+.times {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.time {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.time.selected {
+    background: #5469d4;
+    color: #fff;
+}
+
+.book-btn {
+    background: #5469d4;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s ease;
+}
+
+.book-btn:hover {
+    background: #4455b4;
+}

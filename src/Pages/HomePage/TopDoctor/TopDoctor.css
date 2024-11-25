@@ -1,0 +1,6 @@
+.top-doctor-card {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    cursor: pointer;
+}

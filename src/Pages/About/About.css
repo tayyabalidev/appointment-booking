@@ -1,0 +1,10 @@
+.about-card {
+    border: 1px solid rgb(174, 174, 174);
+    padding: 40px;
+    cursor: pointer;
+}
+
+.about-card:hover {
+    background-color: rgb(78, 114, 223);
+    color: white;
+}
