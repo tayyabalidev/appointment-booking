@@ -1,6 +1,6 @@
 import React from "react";
 import AppBars from "./AppBars";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import { Outlet } from "react-router-dom";
 
 const PageLayout = () => {

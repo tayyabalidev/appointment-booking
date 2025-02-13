@@ -1,6 +1,7 @@
 import { Grid, Typography, Box } from "@mui/material";
+import "./Footer.css";
 import React from "react";
-import adminlogo from "../../Assest/assets_admin/adminlogo.svg";
+import adminlogo from "../../../Assest/assets_admin/adminlogo.svg";
 const Footer = () => {
   return (
     <Box
@@ -10,15 +11,24 @@ const Footer = () => {
         fontFamily: "'Raleway', serif",
       }}
     >
-      <Grid container mt={9}>
-        <Grid container xs={5}>
+      <Grid container mt={9} spacing={2}>
+        {/* Left Section */}
+        <Grid item xs={12} sm={5}>
           <Box>
-            <Typography mt={7}>
-              <img src={adminlogo} alt="adminlogo" />
+            <Typography>
+              <img
+                src={adminlogo}
+                alt="adminlogo"
+                style={{ maxWidth: "100px" }}
+              />
             </Typography>
             <Typography
               mt={1}
-              sx={{ fontSize: "13px", fontWeight: "600", color: "#827f7f" }}
+              sx={{
+                fontSize: "13px",
+                fontWeight: "600",
+                color: "#827f7f",
+              }}
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -27,10 +37,19 @@ const Footer = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid container mt={7} xs={7}>
-          <Grid xs={12} container>
-            <Grid xs={6}>
-              <Typography variant="h6" ml={2} sx={{ fontWeight: "600" }}>
+
+        {/* Right Section */}
+        <Grid item xs={12} sm={7}>
+          <Grid container spacing={2}>
+            {/* Company Section */}
+            <Grid item xs={12} sm={6}>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: "600",
+                  textAlign: { sm: "left" },
+                }}
+              >
                 Company
               </Typography>
               <ul
@@ -40,6 +59,8 @@ const Footer = () => {
                   fontSize: "15px",
                   fontWeight: "600",
                   lineHeight: "25px",
+                  textAlign: { sm: "left" },
+                  padding: 0,
                 }}
               >
                 <li>Home</li>
@@ -48,8 +69,16 @@ const Footer = () => {
                 <li>Privacy Policy</li>
               </ul>
             </Grid>
-            <Grid xs={6}>
-              <Typography variant="h6" ml={3} sx={{ fontWeight: "600" }}>
+
+            {/* Get in Touch Section */}
+            <Grid item xs={12} sm={6}>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: "600",
+                  textAlign: { sm: "left" },
+                }}
+              >
                 GET IN TOUCH
               </Typography>
               <ul
@@ -59,6 +88,8 @@ const Footer = () => {
                   fontSize: "15px",
                   fontWeight: "600",
                   lineHeight: "25px",
+                  textAlign: { xs: "center", sm: "left" },
+                  padding: 0,
                 }}
               >
                 <li>+0-000-000-000</li>
@@ -68,6 +99,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Grid>
+
       <Typography
         sx={{
           borderTop: "1px solid #c4c2c2",

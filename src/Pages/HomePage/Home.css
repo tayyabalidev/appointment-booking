@@ -1,20 +1,22 @@
 .Home-section {
     background-color: #5F6FFF !important;
     margin: auto;
-    width: 93%;
-    margin-top: 50px;
+    width: 83%;
+    margin-top: 35px;
     border-radius: 10px;
 }
 
 .Home-left-side {
     color: white;
-    font-size: 30px;
+    font-size: 30px !important;
     margin-top: 100px !important;
 }
 
 .Home-left-side-title {
-    padding-left: 60px;
-    line-height: 1.5rm;
+    padding-left: 60px !important;
+    line-height: 1.5rm !important;
+    font-weight: 600 !important;
+    font-size: 40px !important;
 }
 
 .Home-left-side-content {
@@ -24,18 +26,78 @@
     align-items: center;
     padding-left: 70px;
     margin-top: 20px;
+
 }
 
 .home-right-side-img {
-    margin-bottom: -3px;
+    width: 90%;
 }
 
-.Book-appointment {
-    align-items: center;
-    background-color: white;
-    color: black;
-    width: 30%;
-    margin: auto;
-    border-radius: 5px;
-    padding: 15px;
+.home-button {
+    background-color: white !important;
+    color: black !important;
+    margin-bottom: 5px !important;
+
+}
+
+@media screen and (min-width:1440px) {
+    .home-button {
+        margin-left: 100px !important;
+    }
+
+    .home-right-side-img {
+        margin-top: 69px !important;
+    }
+
+    .home-img-content {
+        font-size: 13px !important;
+    }
+
+    .Home-left-side-title {
+        padding-left: 80px !important;
+        font-weight: 600 !important;
+        font-size: 30px !important;
+    }
+
+    .Home-left-side-content {
+        padding-left: 50px !important;
+    }
+
+    .Home-left-side-content-img {
+        width: 31% !important;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .home-button {
+        margin-left: 100px !important;
+    }
+
+    .home-right-side-img {
+        margin-top: 69px !important;
+    }
+
+    .home-img-content {
+        font-size: 13px !important;
+    }
+
+    .Home-left-side-title {
+        padding-left: 80px !important;
+    }
+
+    .Home-left-side-content {
+        padding-left: 50px !important;
+    }
+
+    .Home-left-side-content-img {
+        width: 31% !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .Home-section {
+        width: 100% !important;
+        margin-left: 25px !important;
+
+    }
 }

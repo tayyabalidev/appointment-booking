@@ -7,6 +7,7 @@ import Dermatologist from "../../../Assest/assets_frontend/Dermatologist.svg";
 import Pediatricians from "../../../Assest/assets_frontend/Pediatricians.svg";
 import Neurologist from "../../../Assest/assets_frontend/Neurologist.svg";
 import Gastroenterologist from "../../../Assest/assets_frontend/Gastroenterologist.svg";
+import "./FindSpecialty.css";
 
 const FindSpecialty = () => {
   const specialties = [
@@ -43,10 +44,12 @@ const FindSpecialty = () => {
                 to={`/allDoctors?category=${specialty.query}`}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <Box>
+                <Box className="specialty-img">
                   <img src={specialty.image} alt={specialty.name} />
                 </Box>
-                {specialty.name}
+                <Typography className="specialty-text">
+                  {specialty.name}
+                </Typography>
               </Link>
             </Grid>
           ))}

@@ -116,7 +116,15 @@ const DoctorDetaile = () => {
                   margin: "8px",
                 }}
               >
-                <CardActionArea>
+                <CardActionArea
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#fff",
+                      boxShadow: "none",
+                    },
+                    transition: "none",
+                  }}
+                >
                   <CardMedia
                     component="img"
                     height="240"

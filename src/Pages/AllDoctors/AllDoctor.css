@@ -3,3 +3,20 @@
     margin: auto;
     flex-wrap: wrap;
 }
+
+.doctor-specialist {
+    width: 83%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(75 85 99);
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.specialist-list {
+    list-style: none;
+    margin-right: "5px";
+    width: "20%" !important
+}
